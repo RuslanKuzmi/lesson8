@@ -1,0 +1,73 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+
+h1{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	max-width: fit-content;
+	margin: 0 auto 20px;
+}
+main{
+	max-width: 1440px;
+	margin: 0 auto;
+	background: url("../img/01.png")0 0/cover scroll;
+	color: white;
+}
+
+.list {
+	margin-bottom: 20px;
+}
+
+.list *:last-child{
+	margin-bottom: 0px;
+}
+
+.list ul{
+	max-width: 350px;
+	margin: 0 auto 20px;
+	text-align: center;
+}
+
+.list li{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+.list li::before{
+	content: "";
+	background: url("../img/icons/02.png") center no-repeat;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.list li:hover{
+	color: purple;
+	font-weight: 700;
+}
+
+.list li:active{
+	color: black;
+}
+
+.list li:hover::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/03.png") center/ cover;
+	box-shadow: 0px 5px 0px 0px rgba(0, 0, 255, 0.53);
+	
+}
+.list li:hover{
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.464);
+}
+h1:hover +.list{
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.464);
+	color: purple;
+	font-weight: 700;
+}
+
